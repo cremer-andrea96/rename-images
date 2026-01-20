@@ -31,7 +31,7 @@ class CustomFileSystemModel(QFileSystemModel):
             elif section == 3:
                 return "Geändert"
             elif section == 4:
-                return "EXIF Datum"
+                return "Erstelldatum (Metadata)"
         return super().headerData(section, orientation, role)
 
     def data(self, index, role=Qt.DisplayRole):
